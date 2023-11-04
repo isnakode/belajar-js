@@ -1,0 +1,54 @@
+---
+sidebar_position: 1
+---
+# Tipe data
+
+Sebelum belajar variable kita sebaiknya mengetahui tipe data apa saja yang bisa dipakai di javascript, berikut beberapa tipe datanya:
+
+## String
+
+String adalah tipe data untuk _tulisan_, syntaxnya adalah menggunakan tanda kutip pada tulisan yang dibuat, contoh:
+```js
+console.log('contoh pesan') // ini berhasil
+console.log("contoh pesan") // ini juga bisa pake petik 2
+console.log(`contoh pesan`) // backtick juga ok
+console.log(contoh pesan) // error tanpa tanda kutip
+```
+
+## Number
+
+Tipe data number dibagi 2 yaitu integer (bilangan bulat) dan decimal (pecahan), tipe data number tidak memerlukan tanda kutip, cukup angka saja
+
+### Integer
+
+```js
+console.log(200) // ini berhasil
+console.log('200') // ini juga berhasil, namun akan dianggap sebagai string, bukan number
+```
+
+### Decimal
+
+Syntax pembuatan decimal di javascript berbeda dari pecahan biasa, biasanya kita menulis dengan koma seperti `4,5`, tapi di javascript kita harus menggunakan titik `4.5`
+
+```js
+console.log(26.8) // ini berhasil
+console.log(26,8) // ini juga berhasil, namun dianggap sebagai dua integer, bukan decimal
+```
+
+## Boolean
+
+Boolean adalah tipe data yang berfungsi menunjukkan benar dan salah, boolean hanya memiliki dua data, yaitu `true` yang berarti benar dan `false` yang berarti salah
+
+```js
+console.log(true) // ini berhasil
+console.log(false) // ini juga berhasil
+console.log("false") // ini juga berhasil, namun dianggap sebagai string karna pake kutip
+```
+
+## Undefined
+
+Undefined muncul ketika variable tidak diinisialisasi
+
+:::info
+Tipe data yang lain seperti Array dan Object akan dibahas di materi lanjutan
+:::
