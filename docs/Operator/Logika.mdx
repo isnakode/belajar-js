@@ -4,10 +4,88 @@ title: Logika
 
 # Operator logika
 
-Operator logika
+Operator logika digunakan untuk menggabungkan, membandingkan, dan mengubah nilai-nilai boolean, operator ini mengembalikan boolean sebagai hasil
 
 | simbol | dibaca | arti  |
 |--------|--------|-------|
 | &&     | AND    | dan   |
 | \|\|   | OR     | atau  |
 | !      | not    | tidak |
+
+## AND
+
+Operator AND digunakan untuk menggabungkan dua boolean, operator ini akan menghasilkan true hanya jika kedua nilai true, bayangkan kamu hanya ingin makan jika makanan itu murah **dan** enak
+
+```js
+let murah = true
+let enak = true
+console.log(murah && enak) // true, karna keduanya true
+```
+
+Jadi saat salah satunya tidak ada maka kamu tidak mau atau false
+
+```js
+let murah = false
+let enak = true
+console.log(murah && enak) // false, karna salah satunya false
+```
+
+Apalagi keduanya false(gak murah dan gak enak), pasti gak mau kan
+
+```js
+let murah = false
+let enak = false
+console.log(murah && enak) // false, karna keduanya false
+```
+
+## OR
+
+Operator OR digunakan untuk menggabungkan dua boolean, operator ini akan menghasilkan false hanya jika kedua nilai false, bayangkan kamu ingin makan jika makanan itu murah **atau** enak, perhatikan kita memakai **atau** yang berarti seandainya satu saja yang true kita tetap mau
+
+```js
+let murah = true
+let enak = true
+console.log(murah || enak) // true, karna keduanya true
+```
+
+Walaupun salah satunya false, anggap saja tidak enak tapi murah, tetap mau
+
+```js
+let murah = true
+let enak = false
+console.log(murah || enak) // true, karna masih ada salah satu yang true
+```
+
+Tapi kalo keduanya false(gak enak dan gak murah), jelas tolak lah
+
+```js
+let murah = false
+let enak = false
+console.log(murah || enak) // false, karna keduanya false
+```
+
+## Not
+
+Operator NOT digunakan untuk membalik suatu boolean, jika true diberi operator not maka akan menjadi false, dan jika false diberi operator not maka akan menjadi true, caranya cukup diberi tanda seru di depan nilai boolean
+
+```js
+console.log(!true) // false
+console.log(!false) // true
+```
+
+Kita juga bisa pake variable
+
+```js
+let keren = true
+let jelek = false
+console.log(!keren) // false
+console.log(!jelek) // true
+```
+
+<details>
+<summary>Tugas kilat</summary>
+```js
+console.log(2 < 3 && 3 > 2) // coba run dan tebak hasilnya sebelum dirun
+```
+</details>
+
