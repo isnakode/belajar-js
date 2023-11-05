@@ -3,6 +3,12 @@ import Layout from "@theme/Layout";
 export default function Index() {
   return (
     <Layout >
+      <h2 style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '32px 32px 24px 32px'
+      }}>Selalu praktikkan kode setelah selesai setiap materi ✌️</h2>
       <div class="hero shadow--lw hero--primary">
         <div class="container">
           <h1 class="hero__title">Belajar JS</h1>

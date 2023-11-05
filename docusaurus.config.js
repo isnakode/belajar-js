@@ -34,6 +34,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
           editUrl:
             'https://github.com/isnakode/belajar-js/tree/main',
         },
@@ -48,7 +49,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/logo.png',
       navbar: {
         title: 'Belajar JS',
