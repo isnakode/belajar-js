@@ -1,0 +1,79 @@
+---
+title: Perbandingan
+sidebar_position: 3
+---
+
+# Operator perbandingan
+
+Operator perbandingan digunakan untuk membandingkan dua nilai, operator ini akan mengembalikan nilai [boolean](/variable/tipe-data#boolean)
+
+| simbol  | dibaca               | arti                          |
+|---------|----------------------|-------------------------------|
+| {`==`}  | equal                | apakah nilai sama             |
+| {`!=`}  | not equal            | apakah nilai berbeda          |
+| {`<`}   | less than            | apakah lebih kecil            |
+| {`<=`}  | less than or equal   | apakah lebih kecil atau sama  |
+| {`>`}   | greater than         | apakah lebih besar            |
+| {`>=`}  | greater than or qual | apakah lebih besar atau sama  |
+
+## Equal
+
+Disebut juga `sama dengan` memakai simbol `==`, contoh:
+
+```js
+console.log(5 == 5) // true karna sama
+console.log('aku' == 'aku') // true karna sama
+console.log(25.8 == 25.5) // false karna beda
+```
+
+## Not equal
+
+Disebut juga `beda dengan` atau `tidak sama dengan` memakai simbol `!=`, contoh:
+
+```js
+console.log(5 != 7) // true karna beda
+console.log('aku' != 'kamu') // true karna beda
+console.log(true != true) // false karna sama
+```
+
+## Less than
+
+Disebut juga `kurang dari` memakai simbol `<`, hanya bisa dipakai di tipe data number, contoh:
+
+```js
+console.log(3 < 8) // true, 3 lebih kecil dari 8
+console.log(7 < 4) // false, karna 7 tidak lebih kecil dari 4
+console.log(5 < 5) // false, karna 5 sama bukan lebih kecil
+```
+
+## Less than or equal
+
+Disebut juga `kurang dari atau sama dengan` memakai simbol `<=`, hanya bisa dipakai di tipe data number, contoh:
+
+```js
+console.log(3 <= 8) // true, 3 lebih kecil dari 8
+console.log(7 <= 4) // false, karna 7 tidak lebih kecil dari 4
+console.log(5 <= 5) // true, karna 5 memang tidak lebih kecil namun sama
+```
+
+## Greater than
+
+Disebut juga `lebih dari` memakai simbol `>`, hanya bisa dipakai di tipe data number, contoh:
+
+```js
+console.log(3 > 8) // false, 3 lebih kecil dari 8
+console.log(7 > 4) // true, karna 7 tidak lebih besar dari 4
+console.log(5 > 5) // false, karna 5 sama bukan lebih besar
+```
+
+## Greater than or equal
+
+Disebut juga `lebih dari atau sama dengan` memakai simbol `>=`, hanya bisa dipakai di tipe data number, contoh:
+
+```js
+console.log(3 >= 8) // false, 3 lebih kecil dari 8
+console.log(7 >= 4) // true, karna 7 tidak lebih besar dari 4
+console.log(5 >= 5) // true, karna 5 memang tidak lebih besar namun sama
+```
+
+

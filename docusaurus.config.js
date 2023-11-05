@@ -33,6 +33,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          showLastUpdateTime: true,
           editUrl:
             'https://github.com/isnakode/belajar-js/tree/main',
         },

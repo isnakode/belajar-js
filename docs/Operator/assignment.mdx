@@ -1,0 +1,35 @@
+---
+title: Assignment
+sidebar_position: 2
+---
+
+# Operator assignment
+
+Operator assignment adalah operator yang berfungsi memasukkan data ke variable, beberapa operatornya adalah
+
+| simbol | dibaca                | contoh     | sama dengan       |
+|--------|-----------------------|------------|-------------------|
+| =      | masukkan              | nilai = 5  | nilai = 5         |
+| +=     | tambah lalu masukkan  | nilai += 5 | nilai = nilai + 5 |
+| -=     | kurangi lalu masukkan | nilai -= 5 | nilai = nilai - 5 |
+| /=     | bagi lalu masukkan    | nilai /= 5 | nilai = nilai / 5 |
+| *=     | kali lalu masukkan    | nilai *= 5 | nilai = nilai * 5 |
+
+Contoh pemakaian:
+
+```js
+let nilai = 10
+console.log(nilai) // 10
+nilai = 15 // ini berhasil
+console.log(nilai) // 15
+```
+
+Variable `nilai` diatas berhasil berubah karna kita masukkan langsung 15 ke dalam nilai, sekarang kita akan mencoba mengubahnya dengan cara menambah
+
+```js
+let nilai = 10
+console.log(nilai) // 10
+nilai += 5 // nilai(10) ditambah 5 menghasilkan 15, lalu 15 tadi masuk ke dalam nilai
+console.log(nilai) // 15
+```
+

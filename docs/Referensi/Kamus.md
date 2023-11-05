@@ -1,5 +1,5 @@
 ___
-### Assignment (memasukkan)
+### Assignment
 
 Proses memasukkan data ke dalam variable
 
@@ -21,9 +21,9 @@ Concatenation adalah penggabungan 2 atau lebih string menjadi satu
 'namaku ' + 'adalah ' + 'isnaini' 
 ```
 
-### Initialization (inisialisasi)
+### Initialization
 
-Pengisian pertama
+Atau disebut juga inisialisasi yang berarti Pengisian pertama
 
 ### Modulo
 
