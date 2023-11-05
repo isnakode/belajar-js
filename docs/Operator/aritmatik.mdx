@@ -1,0 +1,79 @@
+Operator aritmatik digunakan untuk melakukan operasi matematika
+
+## Penjumlahan
+
+Untuk melakukan penjumlahan, kita akan menggunakan operator `+`, caranya mirip dengan matematika biasa
+
+```js
+console.log(2 + 2)
+```
+
+Jika kalian run kode diatas, hasil yang muncul bukan `2 + 2` tapi 4, kenapa?, karna operasi menggunakan operator mengembalikan nilai/hasil dari operator tersebut, karna 2 + 2 hasilnya 4, maka yang muncul adalah 4.
+
+Karna operator mengembalikan nilai, kita jadi bisa memasukkannya ke variable
+
+```js
+let hasilPenjumlahan = 4 + 6
+console.log(hasilPenjumlahan) // 10
+```
+
+Bukan hanya number yang bisa dijumlahkan, string juga bisa, namun dalam string tidak disebut sebagai penjumlahan tapi penggabungan/[concatenation](/referensi/kamus#concatenation)
+
+```js
+console.log('isna' + 'kode') // isnakode
+console.log('200' + '100' + '50') // 20010050
+```
+
+## Pengurangan
+
+Untuk melakukan pengurangan, kita akan menggunakan operator `-`
+
+```js
+console.log(5 - 3) // 2
+console.log(10 - 3 - 2) // 5
+```
+
+## Perkalian
+
+Untuk melakukan perkalian, kita akan menggunakan operator asterisk(*) bukan huruf x
+
+```js
+console.log(5 * 3) // 15
+console.log(10 * 3) // 30
+```
+
+## Pembagian
+
+Untuk melakukan pembagian, kita akan menggunakan operator slash( / )
+
+```js
+console.log(5 / 2) // 2.5
+console.log(10 / 5) // 5
+```
+
+## Pangkat
+
+Untuk pangkat, kita akan menggunakan operator double asterisk( ** )
+
+```js
+console.log(5 ** 2) // 5 pangkat 2 = 25
+```
+
+## Modulo
+
+Untuk [Modulo](/referensi/kamus#modulo), kita akan menggunakan operator %
+
+```js
+console.log(5 % 2) // 1
+console.log(8 % 3) // 2
+```
+
+:::note[catatan]
+Jika kalian perhatikan contoh-contoh diatas, kita menggunakan nilai langsung, berhubung kita sudah belajar variable, kita juga bisa memanfaatkan variable
+
+```js
+let nilaiUTS = 90
+let nilaiTugas = 95
+console.log(nilaiUTS + nilaiTugas) // 185
+```
+:::

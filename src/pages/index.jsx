@@ -8,7 +8,7 @@ export default function Index() {
           <h1 class="hero__title">Belajar JS</h1>
           <p class="hero__subtitle">Bikin belajar javascript kamu makin gampang</p>
           <div>
-            <a href="Persiapan/alat" class="button button--lg" style={{
+            <a href="persiapan/alat" class="button button--lg" style={{
               backgroundColor: "#121212",
               color: "white"
             }}>
