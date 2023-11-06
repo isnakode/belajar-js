@@ -1,0 +1,68 @@
+## Pengertian
+
+Switch adalah salah satu metode untuk melakukan percabangan, cara kerjanya mirip if else namun berbeda syntax
+
+## Switch case
+
+Perhatikan contoh kode berikut, kita akan mengecek asal
+
+```js
+let asal = 'lombok'
+
+switch (asal){
+    case 'lombok':
+        console.log('kamu dari lombok')
+        break;
+}
+```
+
+Perhatikan, kita perlu membuat setiap kondisi menjadi `case`, kode diatas dibaca, jika yang dicek(asal) adalah lombok, maka lakukan kode dibawahnya, sama kayak if kan?, jika dilihat juga ada kata break setelah case, tapi jika case hanya satu, break belum terasa fungsinya, coba kita tambahkan case lagi
+
+```js
+let asal = 'lombok'
+
+switch (asal){
+    case 'lombok':
+        console.log('kamu dari lombok')
+        break;
+    case 'jawa':
+        console.log('kamu dari jawa')
+        break;
+}
+```
+
+Jika kalian run kode diatas, maka yang muncul hanya `kamu dari lombok`, karna casenya lombok, namun coba hilangkan `break` pada case lombok
+
+```js
+let asal = 'lombok'
+
+switch (asal){
+    case 'lombok':
+        console.log('kamu dari lombok')
+    case 'jawa':
+        console.log('kamu dari jawa')
+        break;
+}
+```
+
+Run ulang dan kamu akan mendapatkan hasil `kamu dari lombok` dan `kamu dari jawa`, kok bisa `kamu dari jawa` ikut muncul?, padahal asal dari lombok, jawabannya adalah karna `break` berfungsi menghentikan kode, jika `break` tidak ada, maka kode akan terus dijalankan ke bawah hingga akhir switch
+
+## Default
+
+Masih ingat [`else`](/percabangan/if-else#else)?, di switch juga ada mekanisme else, tapi dengan nama `default`, default hanya akan dijalankan, hanya jika case diatasnya false semua
+
+```js
+let asal = 'lombok'
+
+switch (asal){
+    case 'papua':
+        console.log('kamu dari papua')
+        break;
+    case 'jawa':
+        console.log('kamu dari jawa')
+        break;
+    default:
+        console.log('kamu bukan dari pulau besar')
+        break;
+}
+```

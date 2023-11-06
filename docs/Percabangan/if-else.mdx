@@ -1,0 +1,93 @@
+---
+title: If else
+sidebar_position: 1
+---
+
+:::tip
+Sebaiknya buat file baru khusus untuk belajar percabangan, seperti `coba-percabangan.js`, lalu run menggunakan `node coba-percabangan.js`
+:::
+
+## Pengertian
+
+Percabangan berfungsi untuk melakukan pengecekan terlebih dahulu sebelum melakukan suatu kode, bayangkan saja kamu akan mengecek apakah hujan terlebih dahulu sebelum pergi jalan-jalan, jika tidak hujan kamu pergi, dan jika hujan kamu diam di rumah
+
+## If
+
+Anggap saja kamu akan makan hanya jika makanannya enak, maka kodenya akan seperti ini
+
+```js
+let enak = true
+
+if(enak){
+    console.log('makan');
+}
+```
+
+Jika kamu run kode diatas, maka akan muncul "makan" karna kondisi(enak) true, tapi, jika kamu membuat enak menjadi false, maka tidak akan terjadi apa-apa, karna jika kondisi false, kode if akan melewatkan kode di dalam `body`nya `{}`, kamu juga bisa menaruh sebanyak-banyaknya kode di di dalam body 
+
+```js
+let enak = true
+let kenyang = false
+
+if(enak){
+    console.log('baca doa');
+    console.log('makan');
+    kenyang = true
+}
+```
+
+## Else
+
+Jika dengan if kita hanya bisa menjalankan kode jika true, maka dengan kombinasi else, kita bisa menjalankan kode dalam kondisi false
+
+```js
+let enak = false
+
+if(enak){
+    console.log('Makan');
+}else{
+    console.log('Gak mau ah, gak enak');
+} 
+```
+
+Jika kalian run, kalian akan melihat pesan yang muncul adalah yang di dalam bodynya `else`, karna else berfungsi menjalankan kode jika kondisi false
+
+## Else if
+
+Kita juga sering menemukan saat kita perlu mengecek beberapa kondisi, seperti cek nilai UTS, jika nilai lebih dari 90 maka A, jika kurang dari 90 dan lebih dari 80 maka B, selain itu C, maka kita perlu `else if` diantara if dan else, sehingga kodenya akan seperti ini
+
+```js
+let nilai = 95
+
+if(nilai > 90){
+    console.log('Nilai kamu A');
+}else if(nilai < 90 && nilai > 80){
+    console.log('Nilai kamu B');
+}else{
+    console.log('Nilai kamu C');
+}
+```
+
+Kita juga bisa membuat else if sebanyak-banyaknya
+
+```js
+let asal = 'lombok'
+
+if(asal == 'sulawesi'){
+    console.log('Kamu berasal dari sulawesi');
+}else if(asal == 'kalimantan'){
+    console.log('Kamu berasal dari kalimantan');
+}else if(asal == 'jawa'){
+    console.log('Kamu berasal dari jawa');
+}else if(asal == 'papua'){
+    console.log('Kamu berasal dari papua');
+}else{
+    console.log('Kamu bukan dari pulau besar');
+}
+```
+
+:::note[catatan]
+`if` harus ada diawal  
+`else` boleh tidak dipakai, namun jika dipakai harus berada di akhir  
+`else if` boleh tidak dipakai, namun jika dipakai harus berada setelah if
+:::
