@@ -2,3 +2,64 @@
 sidebar_position: 1
 title: For loop
 ---
+
+:::tip
+Sebaiknya buat file baru khusus untuk belajar for, seperti `coba-for.js`, lalu run menggunakan `node coba-for.js`
+:::
+
+Bayangkan saat kamu butuh menampilkan pesan 4x, kamu mungkin akan menulis seperti ini
+
+```js
+console.log('Aku buat ulang');
+console.log('Aku buat ulang');
+console.log('Aku buat ulang');
+console.log('Aku buat ulang');
+```
+
+itu masih 4 pesan, bagaimana kalo 100?, bikin capek!!, maka dari itu javascript memberikan solusi dengan `perulangan`, dan salah satu cara melakukan perulangan adalah dengan `for loop`
+
+## Struktur
+
+![struktur for](/img/for.png)
+
+## Praktik
+
+Kita coba buat kode untuk mengulang 3 kali
+
+```js
+for (let i = 0; i < 3; i++) {
+    console.log('ulang lagi');
+}
+```
+
+Jika kita membaca kode diatas, maka akan seperti ini 
+1. membuat variable `i = 0`
+2. cek apakah `i < 3`
+3. karna `i < 3` true maka body dijalankan, muncullah `ulang lagi` sekali
+4. setelah body dijalankan, lalu `i++` dijalankan sehingga nilai variable i(0) bertambah menjadi 1
+5. sekarang variable `i = 1`
+6. cek apakah `i < 3`
+7. karna `i < 3` true maka body dijalankan, muncullah `ulang lagi` kedua kalinya
+8. setelah body dijalankan, lalu `i++` dijalankan sehingga nilai variable i(1) menjadi 2
+9. sekarang variable `i = 2`
+10. cek apakah `i < 3`
+11. karna `i < 3` true maka body dijalankan, muncullah `ulang lagi` ketiga kalinya
+12. setelah body dijalankan, lalu `i++` dijalankan sehingga nilai variable i(2) menjadi 3
+13. sekarang variable `i = 3`
+14. cek apakah `i < 3`
+15. karna `i < 3` false (i kan 3, sehingga i tidak lebih kecil dari 3) maka perulangan dihentikan
+
+Jika kalian perhatikan, `i` itu adalah variable, karna dia variable kita bisa gunakan di dalam body loop
+
+```js
+for (let i = 0; i < 3; i++) {
+    console.log(i)
+}
+```
+
+Coba run, dan lihat hasilnya, kalian akan melihat 0, 1, 2. keren, kalian juga bisa mengubah kondisinya `i < 3` menjadi `i < 10`, run ulang maka kalian akan melihat angka 0 sampai 9, atau bisa juga merubah `i++` menjadi `i += 2`, sehingga sekarang `i` akan bertambah 3 bukan satu satu
+
+:::tip
+Cobalah mencoba mengganti nama variable, dan angka-angka yang ada
+:::
+

@@ -25,6 +25,17 @@ Concatenation adalah penggabungan 2 atau lebih string menjadi satu
 
 Atau disebut juga inisialisasi yang berarti Pengisian pertama
 
+### Infinite loop
+
+Keadaan saat sebuah perulangan tidak pernah berhenti, biasnya terjadi saat kondisi loop selalu true, contoh (jangan dicoba, kemungkinan besar laptopmu akan hang):
+
+```js
+while(true){
+    
+    console.log('infinity')
+}
+```
+
 ### Modulo
 
 Modulo atau mod adalah hasil bagi (video youtube akan dibuat 👻)

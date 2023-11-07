@@ -83,7 +83,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} isnakode`,
       },
       prism: {
-        theme: prismThemes.oneDark,
+        theme: prismThemes.oneLight,
         darkTheme: prismThemes.oneDark,
         additionalLanguages: ['bash']
       },

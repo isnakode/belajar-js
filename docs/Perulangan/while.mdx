@@ -2,3 +2,33 @@
 title: While loop
 sidebar_position: 2
 ---
+
+`While loop` adalah salah satu bagian dari `loop`, bedanya `for loop` dan `while loop` hanya pada syntaxnya, fungsi 100% sama, contoh
+
+```js
+let i = 0
+
+while (i < 3) {
+    console.log('ulang terus');
+    i++
+}
+```
+
+Perhatikan kondisi di while(`i < 3`), selama yang di dalam tanda kurung true, maka yang di dalam body akan terus dijalankan, tapi jika kondisinya false, maka perulangan akan stop
+
+Kamu bisa mengganti kondisi untuk melakukan perulangan lebih banyak
+
+```js
+let i = 0
+
+while (i < 15) {
+    console.log('ulang terus');
+    i++
+}
+```
+
+:::note[catatan]
+Sebenarnya variable `i` tidak diperlukan, namun `i` berfungsi sebagai pembatas agar loop bisa berhenti, jika loop tidak berhenti maka akan masuk ke kondisi [infinite loop](/referensi/kamus#infinite-loop) yang bisa saja membuat laptopmu hang
+:::
+
+

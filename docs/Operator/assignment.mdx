@@ -11,7 +11,9 @@ Operator assignment adalah operator yang berfungsi memasukkan data ke variable, 
 |--------|-----------------------|------------|-------------------|
 | =      | masukkan              | nilai = 5  | nilai = 5         |
 | +=     | tambah lalu masukkan  | nilai += 5 | nilai = nilai + 5 |
+| ++     | sama dengan `+= 1`    | nilai++    | nilai = nilai + 1 |
 | -=     | kurangi lalu masukkan | nilai -= 5 | nilai = nilai - 5 |
+| --     | sama dengan `-= 1`    | nilai--    | nilai = nilai - 1 |
 | /=     | bagi lalu masukkan    | nilai /= 5 | nilai = nilai / 5 |
 | *=     | kali lalu masukkan    | nilai *= 5 | nilai = nilai * 5 |
 
@@ -32,4 +34,15 @@ console.log(nilai) // 10
 nilai += 5 // nilai(10) ditambah 5 menghasilkan 15, lalu 15 tadi masuk ke dalam nilai
 console.log(nilai) // 15
 ```
+
+Mohon untuk mencoba operator diatas satu persatu sendiri agar terbiasa
+
+:::tip
+Jika memang hanya ingin menambah 1 atau mengurangi 1, kita bisa menggunakan ++ / --
+```
+let angka = 5
+angka--
+console.log(angka) // 4
+```
+:::
 
