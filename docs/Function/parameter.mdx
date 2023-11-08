@@ -1,0 +1,98 @@
+---
+sidebar_position: 1
+---
+
+## Masalah function
+Mulai sekarang, kita anggap saja function itu sebuah `perintah`!, kita coba buat sebuah function makan, lalu kita akan memanggilnya dua kali
+
+```js
+function makan() {
+    console.log('kakak');
+    console.log('makan ayam');
+}
+
+makan()
+makan()
+```
+
+Jika kalian run, maka akan muncul pesan `kakak makan ayam` 2x, tidak ada yang salah, tapi bagaimana jika kita ingin suruh adek?
+
+```js
+function makan() {
+    console.log('adek');
+    console.log('makan ayam');
+}
+
+makan()
+makan()
+```
+
+ok, kita berhasil suruh adek, tapi kakak mana?, ingat!, function dibuat untuk melakukan hal yang sama, jadi solusi sementara kita bisa saja membuat function lain
+
+```js
+function makanKak() {
+    console.log('kakak');
+    console.log('makan ayam');
+}
+
+function makanDek() {
+    console.log('adek');
+    console.log('makan ayam');
+}
+
+makanKak()
+makanDek()
+```
+
+yeay, berhasil, kakak dan adek bisa makan ayam, tapi bagaimana jika ingin suruh keponakan, ibu, ayah, kakek, huuuuuuu banyak banget, gk kebayang bikin puluhan function hanya untuk makan ayam 
+
+## Paramater
+
+Dikarnakan membuat banyak function yang melakukan hal yang sama sangat menguras waktu, javascript memberikan solusi bernama `parameter`, apa itu parameter?, parameter bisa kita sebut sebagai `info tambahan`, perhatikan kode tadi
+
+```js
+function makanKak() {
+    console.log('kakak');
+    console.log('makan ayam');
+}
+
+function makanDek() {
+    console.log('adek');
+    console.log('makan ayam');
+}
+```
+
+Kalian akan melihat, dua function tersebut hanya beda orang(kakak dan adek), sedangkan makan ayam sama, jadi kita bisa mengangkat hal yang beda tadi(orang) sebagai parameter, caranya cukup menambahkannya di dalam tanda kurung
+
+```js
+function makan(orang) {
+    console.log(orang); // orang diambil dari parameter
+    console.log('makan ayam');
+}
+```
+
+Dengan kode diatas, orang bisa diganti ganti tergantung apa yang kita isikan, cara memanggil functionnya sekarang seperti berikut:
+
+```js
+makan('kakak')
+makan('adek')
+makan('ibu')
+```
+
+Lihat?, dengan satu function kita bisa menggunakannya untuk beberapa orang, kita juga bisa menambahkan beberapa parameter dengan dipisahkan koma
+
+```js
+function makan(orang, porsi) {
+    // kode kalian
+}
+```
+
+
+:::note[catatan]
+```js
+makan('kakak')
+makan('adek')
+makan('ibu')
+```
+'kakak', 'adek', dan 'ibu' yang dimasukkan saat pemanggilan function disebut [argumen](/referensi/kamus#argumen)
+:::

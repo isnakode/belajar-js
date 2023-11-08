@@ -1,0 +1,103 @@
+# Function
+
+:::tip
+Sebaiknya buat file baru khusus untuk belajar function, seperti `coba-function.js`, lalu run menggunakan `node coba-function.js`
+:::
+
+Sederhananya `function` berfungsi sebagai tempat mengumpulkan beberapa perintah yang berkaitan, anggap saja setiap hari kamu disuruh beberapa hal berikut:
+
+1. Pasang sepatu
+2. Ambil tas
+3. Masukkan buku
+4. Berangkat ke sekolah
+
+Mungkin jika hanya sekali, hal diatas tidak berasa apa-apa, namun jika diulang terus menerus, yang menyuruh dan disuruh mungkin akan capek, cara gampangnya, daripada harus menyebut satu persatu perintah diatas, bagaimana kalo kita suruh saja `pergi ke sekolah`, dengan begitu, yang menyuruh tidak capek, yang disuruh juga bisa mengerti, perhatikan contoh kode dibawah
+
+Tanpa function
+
+```js
+console.log('Pasang sepatu')
+console.log('Ambil tas')
+console.log('Masukkan buku')
+console.log('Berangkat ke sekolah');
+```
+
+Dengan function
+
+```js
+function pergiKeSekolah() {
+    console.log('Pasang sepatu')
+    console.log('Ambil tas')
+    console.log('Masukkan buku')
+    console.log('Berangkat ke sekolah')
+}
+```
+
+## Membuat function
+
+Function bisa dibuat dengan cukup mudah, cukup dimulai dengan kata `function` diikuti dengan nama, lalu tanda kurung, lalu kurung kurawal, kurung kurawal akan disebut `body function` yang berfungsi sebagai tempat menaruh kode yang akan dijalankan saat function dipanggil
+
+```js
+function namaFunction() {
+    // kode kamu disini
+}
+```
+
+## Contoh function
+
+```js
+function mintaMaafTigaKali() {
+    console.log('maaf')
+    console.log('maaf')
+    console.log('maaf')
+}
+```
+
+atau digabung dengan for loop
+
+```js
+function mintaMaafTigaKali() {
+    for (let i = 0; i < 3; i++) {
+        console.log('maaf')
+    }
+}
+```
+
+## Memanggil function
+
+Setelah function dibuat, kita bisa memakainya dengan cara memanggil namanya diikuti dengan tanda kurung, contoh kita akan memanggil function `mintaMaafTigaKali` diatas:
+
+```js
+mintaMaafTigaKali() // ini akan menampilkan maaf 3 kali
+```
+
+Function juga bisa dipanggil berapa kali pun, sehingga cocok digunakan untuk pekerjaan sama yang dilakukan terus menerus
+
+```js
+mintaMaafTigaKali()
+mintaMaafTigaKali()
+mintaMaafTigaKali()
+```
+
+Function juga bisa dipanggil dalam function lain
+
+```js
+function siapkanAlatSekolah() {
+    console.log('ambil pulpen');
+    console.log('masukkan buku');
+}
+
+function pakaiSeragam() {
+    console.log('pakai baju');
+    console.log('pakai celana');
+}
+
+function pergiKeSekolah() {
+    siapkanAlatSekolah()
+    pakaiSeragam()
+}
+```
+
+:::note[catatan]
+Aturan penamaan function sama dengan [variable](/variable/aturan#penamaan-variable)
+:::
