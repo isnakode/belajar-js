@@ -1,8 +1,10 @@
 ---
 sidebar_position: 1
+title: Tipe data
 ---
-:::tip
-Sebaiknya buat file baru khusus untuk belajar variable, seperti `coba-variable.js`, lalu run menggunakan `node coba-variable.js`
+
+:::warning[peringatan]
+Materi ini hanya pengenalan, materi untuk tiap tipe data akan dibahas lebih lanjut di materi [data](/data/string)
 :::
 
 Sebelum belajar variable kita sebaiknya mengetahui tipe data apa saja yang bisa dipakai di javascript, berikut beberapa tipe datanya:
@@ -12,9 +14,6 @@ Sebelum belajar variable kita sebaiknya mengetahui tipe data apa saja yang bisa 
 String adalah tipe data untuk _tulisan_, syntaxnya adalah menggunakan tanda kutip pada tulisan yang dibuat, contoh:
 ```js
 console.log('contoh pesan') // ini berhasil
-console.log("contoh pesan") // ini juga bisa pake petik 2
-console.log(`contoh pesan`) // backtick juga ok
-console.log(contoh pesan) // error tanpa tanda kutip
 ```
 
 ## Number
@@ -25,7 +24,6 @@ Tipe data number dibagi 2 yaitu integer (bilangan bulat) dan decimal (pecahan), 
 
 ```js
 console.log(200) // ini berhasil
-console.log('200') // ini juga berhasil, namun akan dianggap sebagai string, bukan number
 ```
 
 ### Decimal
@@ -34,7 +32,6 @@ Syntax pembuatan decimal di javascript berbeda dari pecahan biasa, biasanya kita
 
 ```js
 console.log(26.8) // ini berhasil
-console.log(26,8) // ini juga berhasil, namun dianggap sebagai dua integer, bukan decimal
 ```
 
 ## Boolean
@@ -44,13 +41,30 @@ Boolean adalah tipe data yang berfungsi menunjukkan benar dan salah, boolean han
 ```js
 console.log(true) // ini berhasil
 console.log(false) // ini juga berhasil
-console.log("false") // ini juga berhasil, namun dianggap sebagai string karna pake kutip
+```
+
+## Array
+
+Array adalah salah satu tipe data yang berfungsi menyimpan kumpulan tipe data lain, array menyimpan datanya menggunakan `index`
+
+```js
+console.log(['riski','ahmad','heri'])
+```
+
+## Object
+
+Object juga salah satu tipe data yang berfungsi menyimpan kumpulan tipe data lain, object menyimpan datanya dengan metode `key:value`
+
+```js
+console.log({
+  nama: 'isnaini',
+  hobi: 'coding',
+  umur: 21,
+})
 ```
 
 ## Undefined
 
 Undefined muncul ketika variable tidak diinisialisasi
 
-:::info
-Tipe data yang lain seperti Array dan Object akan dibahas di materi lanjutan
-:::
+

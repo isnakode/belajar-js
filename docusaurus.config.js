@@ -8,12 +8,12 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Isna kode',
+  title: 'Belajar js',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
-  url: 'https://isnakode.github.io/',
+  url: 'https://isxt.github.io/',
   baseUrl: '/belajar-js/',
-  organizationName: 'isnakode', // Usually your GitHub org/user name.
+  organizationName: 'isxt', // Usually your GitHub org/user name.
   projectName: 'belajar-js', // Usually your repo name.
   trailingSlash: false,
   onBrokenLinks: 'throw',
@@ -49,6 +49,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        respectPrefersColorScheme: false,
+        disableSwitch: true
+      },
       image: 'img/logo.png',
       navbar: {
         title: 'Belajar JS',
@@ -60,7 +65,7 @@ const config = {
             label: 'Javascript',
           },
           {
-            href: 'https://github.com/isnakode/belajar-js',
+            href: 'https://github.com/isxt/belajar-js',
             label: 'GitHub',
             position: 'right',
           },
@@ -68,18 +73,6 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-
-          {
-            title: 'Komunitas',
-            items: [
-              {
-                label: 'Whatsapp',
-                href: 'https://chat.whatsapp.com/J36c8U9eN4dFN9qcY4qrED',
-              },
-            ],
-          },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()} isnakode`,
       },
       prism: {
