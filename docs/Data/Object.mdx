@@ -1,0 +1,31 @@
+Object adalah tipe data yang digunakan untuk menggambarkan benda yang ada di dunia nyata, cara pembuatan object adalah dengan menggunakan kurung kurawal, lalu tiap element punya `key` dan `value`, anggap saja kita akan membuat object buah
+
+```js
+let buah = {
+  jenis: "semangka",
+  warna: "hijau",
+  harga: 5000
+}
+```
+
+Perhatikan di dalam kurung kurawal tiap item dibagi 2, yang mana bagian kiri **:** disebut `key` dan sebelah kanan **:** disebut `value`, dan setiap item dipisah menggunakan koma, setiap item tidak harus dibuat baris sendiri, bisa juga dibuat satu baris, intinya dipisah dengan koma
+
+```js
+let buah = {jenis: "semangka", warna: "hijau", harga: 5000}
+```
+
+## key
+
+`Key` digunakan untuk mengakses `value`, contoh kita ingin memanggil semangka, kita cukup menyebut variablenya lalu diikuti titik lalu nama key
+
+```js
+console.log( buah.jenis ); // semangka
+console.log( buah.harga ); // 5000
+```
+
+Atau menggunakan kurung siku dan diisi nama key
+
+```js
+console.log( buah['jenis'] ); // semangka
+console.log( buah['harga'] ); // 5000
+```

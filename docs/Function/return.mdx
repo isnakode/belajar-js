@@ -1,0 +1,23 @@
+Setiap function memang seharusnya punya nilai yang dikembalikan, anggap saja saat disuruh belanja, kita pasti ada hasil belanja yaitu barang belanjaan, atau makan akan menghasilkan kenyang, atau menghitung angka akan ada hasilnya, contoh kita akan membuat function untuk mengalikan angka:
+
+```js
+function kaliDua(angka) {
+  return angka * 2
+}
+```
+
+Lihat ada kata `return` pada function diatas, return berfungsi mengembalikan nilai pada saat function tersebut dipanggil, pada function diatas, dia akan me-return angka di kali 2, jadi secara tidak langsung function tersebut berisi nilai yang direturn, kita coba panggil
+
+```js
+console.log( kaliDua(5) )
+```
+
+Pada kode diatas, kita memanggil function `kaliDua` dan mengisi paramater dengan 5, karna kali dua me-return angka kali 2, maka function `kaliDua` akan berisi 10
+
+Nah, karna function berisi nilai, kita juga bisa memasukkannya ke dalam variable
+
+```js
+let hasilTujuhKaliDua = kaliDua(7)
+
+console.log(hasilTujuhKaliDua) // 14
+```
