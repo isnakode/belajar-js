@@ -1,3 +1,99 @@
 ---
 sidebar_position: 1
 ---
+
+String adalah tipe data untuk **tulisan**, syntaxnya adalah menggunakan tanda kutip pada tulisan yang dibuat, contoh:
+
+- Menggunakan kutip 1 ( ' )
+
+```js
+console.log('nama kamu');
+```
+
+- Menggunakan kutip 2 ( " )
+
+```js
+let nama = "nama kamu"
+console.log(nama);
+```
+
+- Menggunakan [backtick](/referensi/kamus#backtick) ( ` )
+
+```js
+console.log(`nama kamu`);
+```
+
+## Template literal
+
+Template literal berfungsi memasukkan variable ke dalam string, template literal harus menggunakan backtick, perhatikan kode berikut yang hanya string biasa:
+
+```js
+let nama = 'isnaini'
+
+console.log("namaku nama") // namaku nama
+```
+
+Kode diatas hanya akan memunculkan `nama` biasa, tapi jika denga template literal, kode kita akan menjadi seperti berikut
+
+```js
+let nama = 'isnaini'
+
+console.log(`namaku ${nama}`) // namaku isnaini
+```
+
+Perhatikan `nama` dibungkus dengan kurung kurawal `{}` dan diawali dengan dolar, itu berarti kita ingin menampilkan variable nama di dalam string, kita bisa juga menggunakan banyak variable
+
+```js
+let nama = 'isnaini'
+let umur = 21
+
+console.log(`namaku ${nama} dan umurku ${umur} tahun`)
+// namaku isnaini dan umurku 21 tahun
+```
+
+<details>
+<summary>tugas kilat</summary>
+```js
+let nama = 'nama kamu'
+let sekolah = 'sekolah kamu'
+let kelas = 'kelas kamu'
+
+// munculkan pesan: namaku <nama mu> bersekolah di <sekolah> pada kelas <kelas mu>
+```
+</details>
+
+## Method
+
+String memiliki method untuk membantu memanipulasi nilai string yang ada, beberapa method yang ada antara lain
+
+| nama                        | fungsi                                  |
+| :-------------------------- | :-------------------------------------- |
+| toUpperCase()               | merubah menjadi huruf besar             |
+| toLowerCase()               | merubah menjadi huruf kecil             |
+| replace(kataLama, kataBaru) | mengubah suatu nilai menjadi nilai baru |
+
+### toUpperCase
+
+```js
+let negara = 'indonesia'
+console.log(negara.toUpperCase()); // INDONESIA
+
+console.log('nama'.toUpperCase()); // NAMA
+```
+
+### toLowerCase
+
+```js
+let negara = 'InDoNeSiA'
+console.log(negara.toLowerCase()); // indonesia
+
+console.log('NAMA KAMU'.toLowerCase()); // nama kamu
+```
+
+### replace
+
+```js
+let kata = 'aku suka dia'
+
+console.log(kata.replace('dia','kamu')); // aku suka kamu
+```

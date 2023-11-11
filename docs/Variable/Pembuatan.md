@@ -11,7 +11,7 @@ let nama // ini berhasil
 let umur // ini berhasil
 ```
 
-penulisan nama variable harus dimulai dengan huruf kecil seperti `nama`, jika terdiri dua kata atau lebih, kata berikutnya menggunakan huruf kapital, seperti `nama pak guru` menjadi `namaPakGuru`, nama variable juga tidak boleh dimulai dengan angka
+penulisan nama variable harus dimulai dengan huruf kecil seperti `nama`, jika terdiri dua kata atau lebih, kata berikutnya menggunakan huruf kapital, seperti `nama pak guru` menjadi `namaPakGuru`, nama variable juga tidak boleh dimulai dengan angka dan simbol
 
 ```js
 let namaIbuDosen // ini berhasil
@@ -31,5 +31,17 @@ let umur 22 // ini error karna tidak ada tanda =
 Setelah memasukkan data, maka variable tersebut akan berisi data yang disediakan, nama akan berisi titin dan umur akan berisi 22
 
 :::warning[peringatan]
-Jika variable tidak diisi, maka variable itu akan berisi undefined
+Tidak boleh ada 2 variable yang bernama sama
+
+```js
+let nama = 'herna' // ini berhasil
+let nama = 'yati' // ini error karna variable nama sudah ada
+```
+
+Jika memang hanya ingin mengubah isi, tidak perlu memakai let
+
+```js
+let nama = 'herna' // ini berhasil
+nama = 'yati' // ini berhasil karna tidak membuat variable baru, hanya mengubah
+```
 :::

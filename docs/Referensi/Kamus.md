@@ -3,6 +3,10 @@ ___
 
 Proses memasukkan data ke dalam variable
 
+### Backtick
+
+Backtick mirip dengan tanda kutip, namun backtick berada di samping kiri angka 1 pada keyboard
+
 ### Camel case
 
 Cara penulisan dengan menggunakan huruf kecil di awal, lalu diikuti dengan huruf kapital untuk huruf pertama kata-kata selanjutnya
@@ -31,7 +35,6 @@ Keadaan saat sebuah perulangan tidak pernah berhenti, biasnya terjadi saat kondi
 
 ```js
 while(true){
-    
     console.log('infinity')
 }
 ```

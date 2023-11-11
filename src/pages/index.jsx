@@ -9,12 +9,12 @@ export default function Index() {
         justifyContent: 'center',
         padding: '32px 32px 24px 32px'
       }}>Selalu praktikkan kode setelah selesai setiap materi ✌️</h2>
-      <div class="hero shadow--lw hero--primary">
-        <div class="container">
-          <h1 class="hero__title">Belajar JS</h1>
-          <p class="hero__subtitle">Bikin belajar javascript kamu makin gampang</p>
+      <div className="hero shadow--lw hero--primary">
+        <div className="container">
+          <h1 className="hero__title">Belajar JS</h1>
+          <p className="hero__subtitle">Bikin belajar javascript kamu makin gampang</p>
           <div>
-            <a href="kamus" class="button button--lg" style={{
+            <a href="persiapan/alat" className="button button--lg" style={{
               backgroundColor: "#121212",
               color: "white"
             }}>

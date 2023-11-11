@@ -1,0 +1,73 @@
+Array adalah tipe data yang berisi kumpulan tipe data lain, bahkan array bisa berisi array lagi, bayangkan saja array sebagai sebuah barisan, yang tiap barisannya punya urutan dari awal hingga akhir, urutan ini memudahkan pemanggilan, contoh: "panggil **baris 4**"
+
+![barisan](/img/barisan.png)
+
+Sama seperti konsep barisan di atas, array juga memiliki sistem yang sama, perbedaannya, array menggunakan `index` sebagai cara mengurutkan, dan urutannya dimulai dari 0 bukan 1
+
+![barisan](/img/array.png)
+
+Untuk membuat array kita akan menggunakan kurung siku( `[]` ), dan setiap elemen harus dipisah dengan koma, mari coba buat gambar diatas menjadi array
+
+```js
+console.log( ["herna","isnaini","titin","nizam","riski"] );
+```
+
+Array juga seperti tipe data lainnya bisa dimasukkan ke dalam variable
+
+```js
+let daftarTeman = ["herna","isnaini","titin","nizam","riski"]
+console.log(daftarTeman);
+```
+
+## Index
+
+Seperti yang sudah dijelaskan diatas, urutan pada array disebut index dan urutannya dimulai dari 0, contoh kita ingin memanggil "isnaini" pada variable `daftarTeman` diatas, maka index dari isnaini adalah 1, cara memanggilnya cukup dengan memanggil variablenya dan ditambahkan kurung siku lalu index yang akan dipanggil
+
+```js
+let daftarTeman = ["herna","isnaini","titin","nizam","riski"]
+
+console.log(daftarTeman[1]) // isnaini
+```
+
+Contoh lagi, kita akan panggil "titin" di urutan ke 3, maka indexnya adalah 2
+
+```js
+console.log(daftarTeman[2]) // titin
+```
+
+## Method
+
+Array memiliki method untuk membantu memanipulasi nilai arrray yang ada, beberapa method yang ada antara lain
+
+| nama          | fungsi                           |
+| :------------ | :------------------------------- |
+| push(element) | menambahkan element di akhir     |
+| pop()         | menghapus data di index terakhir |
+| shift()       | menghapus data di index awal     |
+
+### push
+
+```js
+let nilai = [100, 90]
+console.log(nilai) // [100, 90]
+nilai.push(80)
+console.log(nilai) // [100, 90, 80]
+```
+
+### pop
+
+```js
+let nilai = [100, 90, 80]
+console.log(nilai) // [100, 90, 80]
+nilai.pop()
+console.log(nilai) // [100, 90]
+```
+
+### shift
+
+```js
+let nilai = [100, 90, 80]
+console.log(nilai) // [100, 90, 80]
+nilai.shift()
+console.log(nilai) // [90, 80]
+```
